@@ -15,7 +15,9 @@ from selenium.webdriver.common.proxy import *
 no_of_reviews = 1000
 
 non_bmp_map = dict.fromkeys(range(0x10000, sys.maxunicode + 1), 0xFFFD)
-driver = webdriver.Chrome(r"C:\Users\user\Anaconda3\Scripts\chromedriver.exe")
+driver = webdriver.Chrome(
+    r"C:\Program Files\Google\Chrome\Application\chromedriver.exe"
+)
 
 wait = WebDriverWait(driver, 10)
 
